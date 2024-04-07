@@ -2,7 +2,7 @@ package com.elbaz.sample.di
 
 import android.content.Context
 import androidx.room.Room
-import com.elbaz.sample.data.AnimeRepository
+import com.elbaz.sample.domain.AnimeRepository
 import com.elbaz.sample.data.AnimeRepositoryImpl
 import com.elbaz.sample.data.local.AnimeDao
 import com.elbaz.sample.data.local.AnimeDatabase

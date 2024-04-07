@@ -2,7 +2,7 @@ package com.elbaz.sample.ui.screens.main
 
 import com.elbaz.sample.ui.base.BaseViewModel
 import com.elbaz.sample.data.models.AnimeModel
-import com.elbaz.sample.data.AnimeRepository
+import com.elbaz.sample.domain.AnimeRepository
 import com.elbaz.sample.data.local.Category
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers

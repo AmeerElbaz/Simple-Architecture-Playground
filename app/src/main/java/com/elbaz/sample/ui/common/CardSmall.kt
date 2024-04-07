@@ -23,7 +23,6 @@ import com.elbaz.sample.data.models.AnimeModel
 import com.elbaz.sample.data.local.Category
 import com.elbaz.sample.ui.theme.PoppinsFont
 import com.elbaz.sample.ui.theme.WhiteEdgar
-import com.elbaz.sample.ui.theme.shimmerLoadingAnimation
 import com.elbaz.sample.ui.theme.spacing
 
 @Preview
@@ -54,7 +53,7 @@ fun CardSmall(item: AnimeModel, isLoading:Boolean) {
         )
         Text(
             text = if(isLoading)" " else item.name,
-            fontFamily = FontFamily(PoppinsFont),
+            fontFamily = PoppinsFont,
             color = WhiteEdgar,
             fontSize = 10.sp
         )

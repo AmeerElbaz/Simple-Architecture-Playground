@@ -50,7 +50,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.elbaz.sample.R
+import com.elbaz.architectur_smaple.R
+
 import com.elbaz.sample.data.models.AnimeModel
 import com.elbaz.sample.ui.common.BottomNavBar
 import com.elbaz.sample.ui.common.CardLarge
@@ -62,7 +63,7 @@ import com.elbaz.sample.ui.theme.spacing
 
 @Preview(device = PIXEL_4, showSystemUi = true, showBackground = true, backgroundColor = 0xFF171717)
 @Composable
-fun MainScreenPreview() {
+fun MainScreen() {
 
     //Remove this, it will cause leaks
     val viewModel  : MainScreenViewModel =  hiltViewModel()
@@ -127,7 +128,6 @@ LaunchedEffect(key1 = uiState.msg){
                 refreshing = uiState.isLoading
             )
         }
-//        }
     }
 }
 
@@ -161,15 +161,6 @@ private fun Section(
     }
 }
 
-@Composable
-fun MainScreen() {
-    Box(Modifier.fillMaxSize()) {
-        BottomNavBar(Modifier.align(Alignment.BottomCenter))
-
-    }
-
-
-}
 
 @Composable
 fun TopBar(modifier: Modifier) {
