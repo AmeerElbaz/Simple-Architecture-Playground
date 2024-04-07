@@ -1,4 +1,4 @@
-package com.elbaz.sample.data
+package com.elbaz.sample.domain
 
 import com.elbaz.sample.data.models.AnimeModel
 import kotlinx.coroutines.flow.Flow

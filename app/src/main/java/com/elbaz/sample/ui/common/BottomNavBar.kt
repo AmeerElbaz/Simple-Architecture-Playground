@@ -14,7 +14,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
-import com.elbaz.sample.R
+import com.elbaz.architectur_smaple.R
 import com.elbaz.sample.ui.theme.PindjurRed
 import com.elbaz.sample.ui.theme.WhiteEdgar
 import com.elbaz.sample.ui.theme.grey

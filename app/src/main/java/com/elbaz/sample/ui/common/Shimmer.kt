@@ -1,4 +1,4 @@
-package com.elbaz.sample.ui.theme
+package com.elbaz.sample.ui.common
 
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
@@ -13,19 +13,23 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 
+/*
+* Original method written  by Caner Kaşeler
+* */
+
 fun Modifier.shimmerLoadingAnimation(
-    isLoading: Boolean = false, // <-- New parameter for start/stop.
-    isLightModeActive: Boolean = false, // <-- New parameter for display modes.
+    isLoading: Boolean = false,
+    isLightModeActive: Boolean = false,
     widthOfShadowBrush: Int = 500,
     angleOfAxisY: Float = 270f,
     durationMillis: Int = 1000,
 ): Modifier {
-    if (!isLoading) { // <-- Step 1.
+    if (!isLoading) {
         return this
     } else {
         return composed {
 
-            // Step 2.
+
             val shimmerColors = ShimmerAnimationData(isLightMode = isLightModeActive).getColours()
 
             val transition = rememberInfiniteTransition(label = "")
@@ -58,17 +62,6 @@ data class ShimmerAnimationData(
     private val isLightMode: Boolean
 ) {
     fun getColours(): List<Color> {
-//        return if (isLightMode) {
-//            val color = Color.White
-//
-//            listOf(
-//                color.copy(alpha = 0.3f),
-//                color.copy(alpha = 0.5f),
-//                color.copy(alpha = 1.0f),
-//                color.copy(alpha = 0.5f),
-//                color.copy(alpha = 0.3f),
-//            )
-//        } else {
         val color = Color.Black
 
         return listOf(
@@ -78,6 +71,5 @@ data class ShimmerAnimationData(
             color.copy(alpha = 0.35f),
             color.copy(alpha = 0.2f),
         )
-//        }
     }
 }

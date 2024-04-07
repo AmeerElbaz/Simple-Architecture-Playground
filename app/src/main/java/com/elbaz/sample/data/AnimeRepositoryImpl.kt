@@ -7,6 +7,7 @@ import com.elbaz.sample.data.remote.RemoteDataSource
 import com.elbaz.sample.data.models.AnimeModel
 import com.elbaz.sample.data.models.toDbModel
 import com.elbaz.sample.data.models.toUiModel
+import com.elbaz.sample.domain.AnimeRepository
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.Flow

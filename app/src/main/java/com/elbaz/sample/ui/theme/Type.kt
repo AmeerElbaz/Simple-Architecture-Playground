@@ -6,7 +6,8 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.elbaz.sample.R
+import com.elbaz.architectur_smaple.R
+
 
 // Set of Material typography styles to start with
 val Typography = Typography(
@@ -36,4 +37,4 @@ val Typography = Typography(
     */
 )
 
-val PoppinsFont = Font(R.font.poppins_medium)
+val PoppinsFont = FontFamily( Font(R.font.poppins_medium))

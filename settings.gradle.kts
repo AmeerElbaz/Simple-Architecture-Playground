@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "JobFinder"
+//rootProject.name = ""
 include(":app")
  

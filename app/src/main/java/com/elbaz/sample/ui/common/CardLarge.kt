@@ -24,7 +24,7 @@ import coil.compose.AsyncImage
 import com.elbaz.sample.data.models.AnimeModel
 import com.elbaz.sample.data.local.Category
 import com.elbaz.sample.ui.theme.WhiteEdgar
-import com.elbaz.sample.ui.theme.shimmerLoadingAnimation
+import com.elbaz.sample.ui.common.shimmerLoadingAnimation
 
 @Composable
 fun CardLarge(item: AnimeModel, isLoading: Boolean) {
